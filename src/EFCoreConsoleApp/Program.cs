@@ -7,6 +7,7 @@ namespace EFCoreConsoleApp
 {
     public class Program
     {
+        //this assumes a sql server database server already setup with the migration run on the database
         public static void Main(string[] args)
         {
             using (var db = new BloggingContext())
