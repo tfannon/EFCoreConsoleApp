@@ -28,6 +28,8 @@ namespace EFCoreConsoleApp
                 {
                     Console.WriteLine($"{blog.BlogId} : {blog.Url}");
                 }
+                Console.WriteLine("Press return");
+                Console.ReadLine();
             }
         }
     }
