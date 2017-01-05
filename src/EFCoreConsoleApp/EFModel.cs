@@ -5,12 +5,14 @@ namespace EFCoreConsoleApp
 {
     public class BloggingContext : DbContext
     {
+        private const string DBServer = "Sleep-BC";
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Post> Posts { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=cayenne;Database=BlogTest;User Id=teammate;Password=teammate;");
+            optionsBuilder.UseSqlServer($"Server={DBServer};Database=BlogTest;User Id=teammate;Password=teammate;");
+            //optionsBuilder.UseSqlServer(@"Server=cayenne;Database=BlogTest;User Id=teammate;Password=teammate;");
         }
     }
 
