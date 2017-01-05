@@ -5,7 +5,7 @@ namespace EFCoreConsoleApp
 {
     public class BloggingContext : DbContext
     {
-        private const string DBServer = "Sleep-BC";
+        private const string DBServer = "localhost";
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Post> Posts { get; set; }
 
