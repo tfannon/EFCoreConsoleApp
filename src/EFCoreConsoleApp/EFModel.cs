@@ -12,7 +12,6 @@ namespace EFCoreConsoleApp
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer($"Server={DBServer};Database=BlogTest;User Id=teammate;Password=teammate;");
-            //optionsBuilder.UseSqlServer(@"Server=cayenne;Database=BlogTest;User Id=teammate;Password=teammate;");
         }
     }
 

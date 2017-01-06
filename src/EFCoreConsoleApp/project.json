@@ -13,6 +13,10 @@
     }
   },
 
+  "tools": {
+    "Microsoft.EntityFrameworkCore.Tools.DotNet": "1.1.0-preview4-final"
+  },
+
   "frameworks": {
     "netcoreapp1.1": {
       "imports": "dnxcore50"

@@ -12,6 +12,7 @@ namespace EFCoreConsoleApp
         {
             using (var db = new BloggingContext())
             {
+                Console.WriteLine(Environment.GetEnvironmentVariable("DBServer"));
                 if (!db.Blogs.Any())
                 {
                     Console.WriteLine("Creating some blog entries");
