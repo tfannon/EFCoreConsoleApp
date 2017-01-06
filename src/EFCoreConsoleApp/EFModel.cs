@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
 namespace EFCoreConsoleApp
 {
     public class BloggingContext : DbContext
     {
-        private const string DBServer = "localhost";
+        private static string DBServer = Environment.GetEnvironmentVariable("DBServer");
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Post> Posts { get; set; }
 
